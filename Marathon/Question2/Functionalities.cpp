@@ -52,12 +52,16 @@ float AverageBookingCharge(TouristVehicle* arr[SIZE]){
     }
 
     float total  = 0.0f;
+    int count  = 0;
 
     for(int i = 0; i < SIZE; i++){
-        total += arr[i]->perHourBookingCharge();
+        if(arr[i]->type() == VehicleType::CAB){
+            total += arr[i]->perHourBookingCharge();
+            count++;
+        }
     }
 
-    return total/SIZE;
+    return total/count;
 
 }
 
