@@ -14,6 +14,6 @@ Bill:: Bill(float billAmount, float bellTaxAmount, Invoice* billAssociatedInvoic
 std::ostream &operator<<(std::ostream &os, const Bill &rhs) {
     os << "_billAmount: " << rhs._billAmount
        << " _bellTaxAmount: " << rhs._bellTaxAmount
-       << " _billAssociatedInvoice: " << rhs._billAssociatedInvoice;
+       << " _billAssociatedInvoice: " << *(rhs._billAssociatedInvoice);
     return os;
 }
