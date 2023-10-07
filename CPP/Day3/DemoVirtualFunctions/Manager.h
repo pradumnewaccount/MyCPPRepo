@@ -4,7 +4,7 @@
 #include<iostream>
 #include "Employee.h"
 
-class Manager : public Employee
+class Manager : public Employee 
 {
     private:
         

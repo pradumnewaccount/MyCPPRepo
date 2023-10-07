@@ -3,7 +3,7 @@
 
 #include <iostream>
 
-class Employee
+class Employee 
 {
     private:
         

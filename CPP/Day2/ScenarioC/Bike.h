@@ -8,7 +8,7 @@
 class Bike : public Vehicle
 {
     private:
-        float _bike_mileage;
+        float _bike_mileage;  
         BikeType _bike_type;
 
 
