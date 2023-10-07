@@ -67,17 +67,17 @@ TouristVehicle* MaximumChargeTouristVehicle(TouristVehicle* arr[SIZE]){
         throw std::runtime_error("Container is Empty.");
     }
 
-    TouristVehicle* res = nullptr;
+    TouristVehicle* result = nullptr;
     float charge = 0.0f;
 
     for(int i = 0; i < SIZE; i++){
         if(arr[i]->perHourBookingCharge() > charge){
             charge = arr[i]->perHourBookingCharge();
-            res = arr[i];
+            result = arr[i];
         }
     }
 
-    return res;
+    return result;
 
 }
 

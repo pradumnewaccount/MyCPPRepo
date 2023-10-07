@@ -36,6 +36,8 @@ int main(){
         std::cout<< ex.what() << "\n";
     }
 
+    
+
 
     FreeMemory(arr);
 }
