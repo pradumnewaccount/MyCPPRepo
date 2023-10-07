@@ -18,6 +18,8 @@ int main(){
     // std::cout<< "Address : " << &message << " Value : " << *message << "\n";
     // std::cout<< "Message : " << message << "\n";
 
+    std::cout << "Hello";
+
     
 
 
