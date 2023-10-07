@@ -25,12 +25,13 @@ class Product
 
          //This is Destructor for destroy object
         ~Product() {
-            std::cout << "Product with ID : " << " destroy\n";
+            std::cout << "Product with ID : " << _productId << " destroy\n";
         }
 
         //Member Function for calculate tax on product
         float ProductTaxAmount();
 
+        //Setter and Getter
         std::string productId() const { return _productId; }
         void setProductId(const std::string &productId) { _productId = productId; }
 
@@ -42,7 +43,8 @@ class Product
 
         std::string productBrand() const { return _productBrand; }
         void setProductBrand(const std::string &productBrand) { _productBrand = productBrand; }
-
+        
+        //Friend Function
         friend std::ostream &operator<<(std::ostream &os, const Product &rhs);
 
 };
